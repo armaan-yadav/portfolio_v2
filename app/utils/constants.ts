@@ -36,7 +36,7 @@ export interface WorkExperience {
   currentlyWorking: boolean;
   technologies: string[];
 }
-export interface Certificate {
+export interface Certificate {  
   id: number;
   title: string;
   url: string;
@@ -229,7 +229,7 @@ export const socialLinks: SocialLink[] = [
   { name: "Resume", icon: RiFileTextLine, href: "/resume/Armaan-Yadav.pdf" },
   {
     name: "Repository",
-    icon: RiGitRepositoryLine, // You can choose a suitable icon
+    icon: RiGitRepositoryLine,
     href: "https://github.com/armaan-yadav/portfolio02",
   },
 ];

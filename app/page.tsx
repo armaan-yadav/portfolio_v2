@@ -32,10 +32,17 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex items-center w-full text-[14px] sm:text-[16px] mt-4">
-          <FaArrowDownLong className="mx-2" />
-          <button className="text-xs border border-gray-500 px-2 py-1 transition-colors duration-200 w-fit">
-            Resume
-          </button>
+          <RiArrowRightLine className="mx-2" />
+          <span className="mr-2">Get the TL;DR version of my career</span>
+          <Link href={"/resume/Armaan-Yadav.pdf"} target="_blank">
+            <button className="text-xs border border-gray-500 px-2 py-1 transition-colors duration-200 w-fit hover:bg-gray-100 dark:hover:bg-gray-800 group">
+              Resume{" "}
+              <FaArrowDownLong
+                className="inline-block ml-1 group-hover:animate-bounce"
+                size={10}
+              />
+            </button>
+          </Link>
         </div>
         {/* Skills section */}
         <motion.div
