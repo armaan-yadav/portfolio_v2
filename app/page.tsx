@@ -1,24 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
-import { skills } from "./utils/constants";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
-import {
-  RiTwitterLine,
-  RiArrowRightLine,
-  RiMailLine,
-  RiArrowDownCircleLine,
-} from "react-icons/ri";
+import { RiArrowRightLine, RiMailLine } from "react-icons/ri";
+import { skills } from "./utils/constants";
+
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full sm:w-[100%] md:w-[70%] lg:w-[50%] p-5 sm:p-2 md:p-4 lg:p-5 mt-3">
       <div>
-        <div className="flex w-full text-[14px] sm:text-[16px] text-justify">
-          Hey, I'm Armaan Yadav, a pragmatic software developer passionate about
-          building things that live on the internet and add value. I love
-          exploring new technologies and applying them to real-world projects.
-        </div>
+        <p className="text-[14px] sm:text-[16px] text-justify">
+          Hey, I'm Armaan Yadav, a pragmatic software developer and
+          cybersecurity enthusiast passionate about{" "}
+          <span className="underline">building and breaking</span> things that
+          live on the internet. <br /> I love exploring emerging technologies
+          and applying them to solve meaningful problems.
+        </p>
 
         <div className="flex items-center w-full text-[14px] sm:text-[16px] mt-4">
           <RiArrowRightLine className="mx-2" />

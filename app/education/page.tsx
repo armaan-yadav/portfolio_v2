@@ -1,5 +1,5 @@
-import EducationItem from "@/components/EducationItem";
 import CertificateItem from "@/components/CertificateItem";
+import EducationItem from "@/components/EducationItem";
 import { Metadata } from "next";
 import { certificates, edducation } from "../utils/constants";
 

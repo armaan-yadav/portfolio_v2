@@ -1,10 +1,10 @@
 import {
+  RiFileTextLine,
+  RiGithubLine,
+  RiGitRepositoryLine,
+  RiLinkedinLine,
   RiMailLine,
   RiTwitterXLine,
-  RiLinkedinLine,
-  RiGithubLine,
-  RiFileTextLine,
-  RiGitRepositoryLine,
 } from "react-icons/ri";
 
 export interface Project {
@@ -114,41 +114,77 @@ export const projects: Project[] = [
 
 export const edducation: Education[] = [
   {
-    schoolName: "Sigma Univeristy",
-    degree: "Master of Computer Applications",
-    duration: "2024 - 2026",
+    schoolName: "Indian Institute of Technology, Kanpur",
+    degree: "Advanced Executive Certificate in Cybersecurity",
+    duration: "December 2025 -  Present",
   },
   {
-    schoolName: "Kurukshetra Univeristy",
+    schoolName: "Sigma Univeristy, Gujarat",
+    degree: "Master of Computer Applications",
+    duration: "October 2024 - May 2026",
+  },
+  {
+    schoolName: "Kurukshetra Univeristy, Haryana",
     degree: "Bachelor of Computer Applications",
-    duration: "2021 - 2024",
+    duration: "August 2021 - July 2024",
   },
 ];
 export const workExperiences: WorkExperience[] = [
   {
+    company: "Freelance Software Developer",
+    role: "Software Developer",
+    description: `
+    Built a custom video editor with AI-powered features including AI avatars and automated upload workflows using Next.js, Remotion, and Docker for scalable video generation and processing.
+    Developed specialized tools for news media houses featuring AI-driven headline generation, script writing, anchor voiceover synthesis, and content paraphrasing to streamline newsroom workflows.
+    Engineered a centralized content publishing system enabling simultaneous uploads to Instagram, Facebook, X (Twitter), and YouTube using n8n, Facebook Graph API, YouTube API, and Meta Business Suite for cross-platform automation.
+    Delivered a full-stack NGO website with a custom admin panel built using React.js, Firebase, and Cloudinary for dynamic content management and media optimization.
+    Developed a local workflow for generating custom talking AI avatars using open-source models, implementing text-to-video and text-to-speech pipelines for personalized video content creation.
+    `,
+    websiteLink: "",
+    startDate: "September 2024",
+    endDate: "Present",
+    currentlyWorking: true,
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Remotion",
+      "Docker",
+      "n8n",
+      "Firebase",
+      "Python",
+      "Facebook Graph API",
+      "YouTube API",
+      "Cloudinary",
+    ],
+  },
+  {
     company: "Quantbug Technologies And Research LLP",
     role: "Software Developer",
     description: `
-    Developed chat apps and college ERP systems, ensuring smooth functionality and user experience.
-    Built and launched a website and mobile app from scratch using Flutter, with a multi-role admin panel.
-    Designed and deployed a responsive static websites with HTML5, CSS3, JavaScript, and jQuery for optimal user experience.
-    Managed deployment processes, server configurations, and domain management for seamless client interactions.
-  `,
-
-    websiteLink: "https://quantbug.in",
+    Worked on multiple full-stack applications including news portals, chat applications, and college ERP systems, delivering scalable and user-centric solutions.
+    Led the end-to-end development of a SEO-optimized news portal for a local media outlet — Yug Abhiyaan Times — using Next.js with SSR, dynamic routing, and responsive UI.
+    Built a custom React.js-based admin panel featuring role-based access control, article and e-paper management, integrated thumbnail editor, and text-to-speech playback using Web Speech API.
+    Developed a secure backend using Node.js, Express.js, and MongoDB Atlas, implementing REST APIs, JWT authentication, middleware validation, and modular architecture.
+    Designed, developed, and deployed a mobile app and website from scratch using Flutter and React.js, including a robust admin panel with multi-role management.
+    Deployed applications using Dockerized services on an Ubuntu VPS via Coolify, managing CI/CD pipelines, domain configuration, and uptime monitoring.
+    Implemented analytics and performance tracking using Google Analytics and Search Console to improve indexing, visibility, and real-time performance insights.
+    `,
+    websiteLink: "https://yugabhiyaantimes.com/",
     startDate: "July 2024",
-    endDate: "December 2024",
+    endDate: "August 2025",
     currentlyWorking: false,
     technologies: [
-      "Node.js",
+      "Next.js",
       "React.js",
-      "C-Panel",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
       "Flutter",
+      "Docker",
+      "Coolify",
       "Appwrite",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "jQuery",
+      "Google Analytics",
     ],
   },
 ];
@@ -197,11 +233,11 @@ export const skills: Skill[] = [
   },
   {
     category: "Databases",
-    skills: ["MongoDB", "Firestore", "MySQL", "Appwrite"],
+    skills: ["PostgreSQL","MongoDB", "Firestore", "MySQL", "Appwrite", ],
   },
   {
     category: "Developer Tools",
-    skills: ["Git", "GitHub", "VS Code", "Android Studio", "Postman"],
+    skills: ["Docker","Git", "GitHub","Linux", "VS Code", "Android Studio", "Postman"],
   },
 ];
 
