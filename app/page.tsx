@@ -1,15 +1,28 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { RiArrowRightLine, RiMailLine } from "react-icons/ri";
 import { skills } from "./utils/constants";
+import SplitLanding from "@/components/SplitLanding";
+import { useState } from "react";
 
 
 export default function Home() {
+  const [showContent, setShowContent] = useState(false);
+
   return (
-    <div className="flex flex-col w-full sm:w-[100%] md:w-[70%] lg:w-[50%] p-5 sm:p-2 md:p-4 lg:p-5 mt-3">
-      <div>
+    <>
+      <SplitLanding onComplete={() => setShowContent(true)} />
+      <AnimatePresence>
+        {showContent && (
+          <motion.div 
+            className="flex flex-col w-full sm:w-[100%] md:w-[70%] lg:w-[50%] p-5 sm:p-2 md:p-4 lg:p-5 mt-3"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+          <div>
         <p className="text-[14px] sm:text-[16px] text-justify">
           Hey, I'm Armaan Yadav, a pragmatic software developer and
           cybersecurity enthusiast passionate about{" "}
@@ -77,6 +90,9 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
